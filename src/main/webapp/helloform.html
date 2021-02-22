@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>Formulário de HelloWorld (usando o HelloServlet.java)</title>
@@ -12,13 +7,15 @@ and open the template in the editor.
     </head>
     <body>
         <div>Formulário de HelloWorld (usando o HelloServlet.java)</div>
-           <form action="alomundo" method="post">
-           <br>Idioma: <input type="radio" name="lang" value="pt" checked> Português
-           <input type="radio" name="lang" value="en"> Inglês
-           <input type="radio" name="lang" value="fr"> Francês
-           <input type="radio" name="lang" value="de"> Alemão<br><br>
-           Nome: <input type="text" name="nome"/><br><br>
-           <input type="submit" value="Cumprimentar"/>
+            <form action="alomundo" method="post">
+            <br>Idioma: <input type="radio" name="lang" value="pt" checked> Português
+            <input type="radio" name="lang" value="en"> Inglês
+            <input type="radio" name="lang" value="fr"> Francês
+            <input type="radio" name="lang" value="de"> Alemão<br><br>
+            Nome: <input type="text" name="nome"/><br><br>
+            <label for="data_nasc">Informe a data do seu aniversário:</label>
+            <input type="date" id="data_nasc" name="data_nasc"><br><br>
+            <input type="submit" value="Cumprimentar"/>
         </form>
 
     </body>
