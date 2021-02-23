@@ -4,28 +4,16 @@
         <title>Formulário de HelloWorld (usando o HelloServlet.java)</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script>
-            function validarData(){
-                var data = document.getElementById("nasc");
-                if(data.value == ''){
-                        alert("Data não preenchida!");
-                        return;
-                }
-            }
-            document.getElementById('data_nasc').max = new Date(new Date().getTime() - new Date().getTimezoneOffset() * 60000).toISOString().split("T")[0];
-        </script>
     </head>
     <body>
         <div>Formulário de HelloWorld (usando o HelloServlet.java)</div>
-            <form action="alomundo" method="post">
-            <br>Idioma: <input type="radio" name="lang" value="pt" checked> Português
-            <input type="radio" name="lang" value="en"> Inglês
-            <input type="radio" name="lang" value="fr"> Francês
-            <input type="radio" name="lang" value="de"> Alemão<br><br>
-            Nome: <input type="text" name="nome"/><br><br>
-            <label for="data_nasc">Informe a data do seu aniversário:</label>
-            <input type="date" id="data_nasc" name="data_nasc"><br><br>
-            <input type="submit" value="Cumprimentar" onClick="validarData()"/>
+           <form action="alomundo" method="post">
+           <br>Idioma: <input type="radio" name="lang" value="pt" checked> Português
+           <input type="radio" name="lang" value="en"> Inglês
+           <input type="radio" name="lang" value="fr"> Francês
+           <input type="radio" name="lang" value="de"> Alemão<br><br>
+           Nome: <input type="text" name="nome"/><br><br>
+           <input type="submit" value="Cumprimentar"/>
         </form>
     </body>
 </html>
