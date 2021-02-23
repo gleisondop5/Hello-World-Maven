@@ -1,4 +1,3 @@
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
@@ -13,8 +12,8 @@
         <% String lang = request.getParameter("lang"); %>
         <jsp:setProperty name="myBean" property="msg" value="<%=lang%>"/>
         <jsp:getProperty name="myBean" property="msg"/>, <%=request.getParameter("nome")%>!
-        <jsp:setProperty name="myBean" property="msg2" value="<%=lang%>"/>
-        <jsp:getProperty name="myBean" property="msg2"/>
-        
+        <jsp:setProperty name="myBean" property="msg2" value="<%=lang%>"/></br>
+        <jsp:getProperty name="myBean" property="msg2"/></br>
+        <jsp:getProperty name="myBean" property="img"/>
     </body>
 </html>

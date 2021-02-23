@@ -9,6 +9,7 @@ public class MessageBean implements Serializable {
      
     private String msg;
     private String msg2;
+    private String img;
     
         
     public MessageBean() {
@@ -19,6 +20,9 @@ public class MessageBean implements Serializable {
     }
     public String getMsg2() {
         return msg2;
+    }
+    public String getImg() {
+        return img;
     }
     
     public void setMsg(String value) {
@@ -56,24 +60,60 @@ public class MessageBean implements Serializable {
         
         switch(local){
             case "pt":
-                if(horaSP>=6 && horaSP<12)msg2 = "Bom dia!";
-                else if(horaSP>=12 && horaSP<18)msg2 = "Boa tarde!";
-                else msg2 = "Boa noite";
+                if(horaSP>=6 && horaSP<12){
+                    msg2 = "Bom dia!";
+                    img = "<img src=img/dia.jpg alt=Minha Figura>";
+                }
+                else if(horaSP>=12 && horaSP<18){
+                    msg2 = "Boa tarde!";
+                    img = "<img src=img/tarde.jpg alt=Minha Figura>";
+                }
+                else {
+                    msg2 = "Boa noite!";
+                    img = "<img src=img/noite.jpg alt=Minha Figura>";
+                }
                 break;               
             case "en":
-                if(horaNY>=6 && horaNY<12)msg2 = "Good morning!";
-                else if(horaNY>=12 && horaNY<18)msg2 = "Good afternoon!";
-                else msg2 = "Good night";
+                if(horaNY>=6 && horaNY<12){
+                    msg2 = "Good morning!";
+                    img = "<img src=img/dia.jpg alt=Minha Figura>";
+                }
+                else if(horaNY>=12 && horaNY<18){
+                    msg2 = "Good afternoon!";
+                    img = "<img src=img/tarde.jpg alt=Minha Figura>";
+                }
+                else {
+                    msg2 = "Good night!";
+                    img = "<img src=img/noite.jpg alt=Minha Figura>";
+                }
                 break;
             case "fr":
-                if(horaFR>=6 && horaFR<12)msg2 = "Bonjour!";
-                else if(horaFR>=12 && horaFR<18)msg2 = "Bon après-midi!";
-                else msg2 = "Bonne nuit";
+                if(horaFR>=6 && horaFR<12){
+                    msg2 = "Bonjour!";
+                    img = "<img src=img/dia.jpg alt=Minha Figura>";
+                }
+                else if(horaFR>=12 && horaFR<18){
+                    msg2 = "Bon après-midi!";
+                    img = "<img src=img/tarde.jpg alt=Minha Figura>";
+                }
+                else {
+                    msg2 = "Bonne nuit!";
+                    img = "<img src=img/noite.jpg alt=Minha Figura>";
+                }
                 break;
             case "de":
-                if(horaDE>=6 && horaDE<12)msg2 = "Guten Morgen!";
-                else if(horaDE>=12 && horaDE<18)msg2 = "Guten Tag!";
-                else msg2 = "Gute Nacht";
+                if(horaDE>=6 && horaDE<12){
+                    msg2 = "Guten Morgen!";
+                    img = "<img src=img/dia.jpg alt=Minha Figura>";
+                }
+                else if(horaDE>=12 && horaDE<18){
+                    msg2 = "Guten Tag!";
+                    img = "<img src=img/tarde.jpg alt=Minha Figura>";
+                }
+                else {
+                    msg2 = "Gute Nacht!";
+                    img = "<img src=img/noite.jpg alt=Minha Figura>";
+                }
                 break;       
         }
     }
